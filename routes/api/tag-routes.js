@@ -48,7 +48,7 @@ router.post('/', async (req, res) => {
 // update a tag's name by its `id` value
 router.put('/:id', async (req, res) => {
   try {
-    const updateTag = await Category.update(
+    const updateTag = await Tag.update(
       {
         tag_name: req.body.tag_name,
       },
