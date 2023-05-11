@@ -26,6 +26,7 @@ Tag.belongsToMany(Product, {
   onDelete: 'SET NULL'
 });
 
+// Exporting the modules
 module.exports = {
   Product,
   Category,

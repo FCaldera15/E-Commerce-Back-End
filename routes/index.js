@@ -3,6 +3,7 @@ const apiRoutes = require('./api');
 
 router.use('/api', apiRoutes);
 
+// This message will appear if the incorrect route is entered
 router.use((req, res) => {
   res.send("<h1>Wrong Route!</h1>")
 });
